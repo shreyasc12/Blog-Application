@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<title>Home</title>
+<ul>
+    {%for obj in object_list%}
+    <h3>
+    <li>
+        <a href = '{{obj.slug}}'>{{obj.title}}</a>
+    </li>
+    </h3>
+    {%endfor%}
+</ul>
+{%endblock content%}

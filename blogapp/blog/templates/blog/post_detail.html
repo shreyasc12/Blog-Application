@@ -1,0 +1,8 @@
+{%extends "base.html"%}
+{%block content%}
+
+<h1><b>{{object.title}}</b> by --<small>{{object.author}}</small></h1>
+<p>{{object.text}}</p>
+<p>{{object.published_date}} , Updated {{object.updated|timesince}} ago</p>
+
+{%endblock content%}
